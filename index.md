@@ -124,7 +124,7 @@ address.
 
 <p id="where">
   <strong>Where:</strong>
-  </p>
+  
 <ul>
   <li>
   {{page.address1}}.
@@ -132,8 +132,8 @@ address.
   <a href="//www.openstreetmap.org/?mlat={{page.latlnga | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.</li>
-    {{page.address2}}.
   <li>
+  {{page.address2}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
