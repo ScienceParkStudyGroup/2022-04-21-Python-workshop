@@ -176,7 +176,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>). <strong>We'll be available half an hour before the starting time to help out in case of problems with the installation.</strong>
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have the specific software packages installed (listed <a href="#setup">below</a>). <strong>We'll be available half an hour before the starting time to help out in case of problems with the installation.</strong>
 </p>
 
 {% comment%}
