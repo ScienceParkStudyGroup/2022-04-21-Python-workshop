@@ -121,7 +121,7 @@ if the latitude and longitude of the workshop have been set.  You
 can use https://itouchmap.com/latlong.html to find the lat/long of an
 address.
 {% endcomment %}
-{% comment %}{% if page.latlnga %}{% endcomment %}
+
 <p id="where">
   <strong>Where:</strong>
   {{page.address1}}.
@@ -130,7 +130,7 @@ address.
   or
   <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.
     {{page.address2}}.
-{% comment %}{% if page.latlngb %}{% endcomment %}
+
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
