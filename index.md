@@ -126,13 +126,13 @@ address.
   <strong>Where:</strong>
   </p>
 <ul>
-  <li>Fri. April 22:
+  <li>Thu. April 21:
   {{page.address1}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlnga | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.</li>
-  <li>hu. April 21:
+  <li>Fri. April 22:
   {{page.address2}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
