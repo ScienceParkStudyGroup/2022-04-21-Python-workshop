@@ -136,7 +136,7 @@ address.
   or
   <a href="//maps.google.com/maps?q={{page.latlngb}}">Google Maps</a>.
 </p>
-{% endif %}
+
 
 <p id="rooms">
   <strong>Rooms:</strong>
