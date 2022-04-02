@@ -138,8 +138,8 @@ address.
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlngb}}">Google Maps</a>.</li>
-
-
+<br>
+</ul>
 
 <p id="rooms">
   <strong>Rooms:</strong>
