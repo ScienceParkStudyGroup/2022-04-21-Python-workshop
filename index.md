@@ -6,8 +6,8 @@ address1: "Day 1:  Science park 904, Amsterdam"
 address2: "Day 2:  Roetersstraat 11, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "The Netherlands"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "Englisch"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng2: "52.363796,4.911743"      # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-latlng1: "52.354430,4.956300"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+latlngb: "52.363796,4.911743"      # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+latlnga: "52.354430,4.956300"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "April 21-22 2022"    # human-readable dates for the workshop ("Feb 17-18, 2020")
 humantime: "9:30 am - 5:00 pm"    # human-readable times for the workshop (e"9:00 am - 4:30 pm")
 startdate: 2022-04-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -126,14 +126,14 @@ address.
   <strong>Where:</strong>
   {{page.address1}}.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng1 | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  <a href="//www.openstreetmap.org/?mlat={{page.latlnga | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng1}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.
     {{page.address2}}.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng2 | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng2}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latlngb}}">Google Maps</a>.
 </p>
 {% endif %}
 
