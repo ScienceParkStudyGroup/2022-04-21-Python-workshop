@@ -2,8 +2,8 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "dc"
 venue: "UvA Amsterdam"        # brief name of host site without address (e.g., "Euphoric State University")
-address1: "Day 1:  Science park 904, Amsterdam"  
-address2: "Day 2:  Roetersstraat 11, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address1: " Science park 904, Amsterdam"  
+address2: " Roetersstraat 11, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "The Netherlands"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "Englisch"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlngb: "52.363796,4.911743"      # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
@@ -126,13 +126,13 @@ address.
   <strong>Where:</strong>
   </p>
 <ul>
-  <li>
+  <li>Fri. April 22:
   {{page.address1}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlnga | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.</li>
-  <li>
+  <li>hu. April 21:
   {{page.address2}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
