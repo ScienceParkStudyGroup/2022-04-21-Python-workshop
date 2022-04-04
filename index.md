@@ -2,10 +2,10 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "dc"
 venue: "UvA Amsterdam"        # brief name of host site without address (e.g., "Euphoric State University")
-address1: " Science park 904, Amsterdam"  
-address2: " Roetersstraat 11, Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address1: " Science park 904, 1098 XH Amsterdam"  
+address2: " Roetersstraat 11, 1018 WB Amsterdam"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "The Netherlands"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
-language: "Englisch"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlngb: "52.363796,4.911743"      # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 latlnga: "52.354430,4.956300"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "April 21-22 2022"    # human-readable dates for the workshop ("Feb 17-18, 2020")
@@ -13,7 +13,7 @@ humantime: "9:30 am - 5:00 pm"    # human-readable times for the workshop (e"9:0
 startdate: 2022-04-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-04-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Marc Galland<sup>1</sup>", "Sam Nooij<sup>2</sup>", "Tijs Bliek<sup>1</sup>"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: #["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Marcel Haas", "Rodrigo Meneses"]     # ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["bliek@uva.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/Et37XiGeok8u_Lk-c3L-           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -32,9 +32,6 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 
 
-{% comment %}
-For a workshop please delete the following block
-{% endcomment %}
 {% comment %}
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to customize your
@@ -56,30 +53,11 @@ see the changes take effect locally.
 {% endif %}
 {% endcomment %}
 
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<iframe
-  src=" https://www.eventbrite.com/e/introduction-to-open-data-science-with-r-tickets-75134036927"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
 
 <h2 id="general">General Information</h2>
 
 {% comment %}
 INTRODUCTION
-
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
@@ -87,9 +65,7 @@ the pitch.
 {% include dc/intro3.html %}
 {% endif %}
 
-<h3 id="general">Who are we</h3>
-
-
+<h3 id="general">Who we are</h3>
 
 {% if page.carpentry == "swc" %}
 {% include sc/intro.html %}
@@ -101,9 +77,6 @@ the pitch.
 
 {% comment %}
 AUDIENCE
-
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
 {% endcomment %}
 {% if page.carpentry == "swc" %}
 {% include sc/who.html %}
@@ -115,24 +88,19 @@ workshop is only open to people from a particular institution.
 
 {% comment %}
 LOCATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
 {% endcomment %}
 
 <p id="where">
   <strong>Where:</strong>
   </p>
 <ul>
-  <li>Thu. April 21:
+  <li><strong>Thursday April 21:</strong>
   {{page.address1}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlnga | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlnga}}">Google Maps</a>.</li>
-  <li>Fri. April 22:
+  <li><strong>Friday April 22:</strong>
   {{page.address2}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlngb | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
@@ -145,8 +113,8 @@ address.
   <strong>Rooms:</strong>
 </p>
 <ul>
-  <li>Thu. April 21: Science park; 9:00 to 13:00 room A1.28</li>
-  <li>Fri. April 22: Roetersstraat; 13:00 to 17:00 room tba</li>
+  <li><strong>Thursday April 21:</strong> Science park 904, 1098 XH Amsterdam room A1.28</li>
+  <li><strong>Friday April 22:</strong> Roetersstraat 11, 1018 WB Amsterdam, room C3.02</li>
 <br>
 </ul>
 <p id="includes">
@@ -158,8 +126,6 @@ address.
 
 {% comment %}
 DATE
-
-This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
@@ -275,14 +241,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% endif %}
 
 {% comment %}
-Collaborative Notes
-
-If you want to use an Etherpad, go to
-
-http://pad.carpentries.org/YYYY-MM-DD-site
-
-where 'YYYY-MM-DD-site' is the identifier for your workshop,
-e.g., '2015-06-10-esu'.
+ETHERPAD
 {% endcomment %}
 {% if page.collaborative_notes %}
 <p id="collaborative_notes">
@@ -878,7 +837,7 @@ please preview your site before committing, and make sure to run
       </article>
     </div>
   </div>
-</div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
+</div> 
 {% endcomment %}
 
 {% comment %}
