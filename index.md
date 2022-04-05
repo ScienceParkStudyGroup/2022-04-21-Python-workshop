@@ -12,24 +12,23 @@ humandate: "April 21-22 2022"    # human-readable dates for the workshop ("Feb 1
 humantime: "9:30 am - 5:00 pm"    # human-readable times for the workshop (e"9:00 am - 4:30 pm")
 startdate: 2022-04-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-04-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Marc Galland<sup>1</sup>", "Sam Nooij<sup>2</sup>", "Tijs Bliek<sup>1</sup>"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Marcel Haas", "Rodrigo Meneses"]     # ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Tijs Bliek<sup>1</sup>", "Marc Galland<sup>1</sup>", "Sam Nooij<sup>2</sup>"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Kasper Abcouwer", "Marcel Haas", "Rodrigo Meneses", "Stacy Shinneman", "Berend Wijers"] 
 email: ["bliek@uva.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/Et37XiGeok8u_Lk-c3L-           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-<sub>1: UvA Amsterdam , 2: LUMC Leiden
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
+<sub>1: University of Amsterdam (UvA) , 2: Leiden University Medical Center (LUMC)
+
 <h1 id="general">Introduction to Python<br><br></h1>
 {% comment %}
 HEADER
-
 Edit the values in the block above to be appropriate for your workshop.
 If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
-
+  
 
 
 {% comment %}
