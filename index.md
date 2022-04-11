@@ -20,7 +20,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 ---
 <sub>1: University of Amsterdam (UvA) , 2: Leiden University Medical Center (LUMC)
 
-<h1 id="general">Introduction to Python<br><br></h1>
+<h1 id="general">Introduction to data analysis and data visualization with Python<br><br></h1>
 {% comment %}
 HEADER
 Edit the values in the block above to be appropriate for your workshop.
